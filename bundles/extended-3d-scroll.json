@@ -1,0 +1,14 @@
+{
+  "id": "extended-3d-scroll",
+  "displayName": "Extended 3D Scroll",
+  "description": "Advanced WebGL, scroll, and page-transition tools: A-Frame, Vanta, PlayCanvas, PixiJS, Locomotive Scroll, and Barba.js",
+  "version": "1.0.0",
+  "skills": [
+    "aframe",
+    "vanta",
+    "playcanvas",
+    "pixijs",
+    "locomotive-scroll",
+    "barba"
+  ]
+}
