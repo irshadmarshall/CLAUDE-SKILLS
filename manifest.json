@@ -1,0 +1,39 @@
+{
+  "name": "claudedesignskills",
+  "displayName": "Claude Design Skills",
+  "version": "1.0.0",
+  "description": "3D rendering, animation, and modern web design skills for Claude Code",
+  "publisher": "freshtechbro",
+  "repository": "freshtechbro/claudedesignskills",
+  "skills": [
+    { "id": "threejs-webgl",        "path": "skills/threejs-webgl.md",        "displayName": "Three.js WebGL" },
+    { "id": "gsap-scrolltrigger",   "path": "skills/gsap-scrolltrigger.md",   "displayName": "GSAP ScrollTrigger" },
+    { "id": "react-three-fiber",    "path": "skills/react-three-fiber.md",    "displayName": "React Three Fiber" },
+    { "id": "motion",               "path": "skills/motion.md",               "displayName": "Framer Motion" },
+    { "id": "babylonjs",            "path": "skills/babylonjs.md",            "displayName": "Babylon.js" },
+    { "id": "aframe",               "path": "skills/aframe.md",               "displayName": "A-Frame" },
+    { "id": "vanta",                "path": "skills/vanta.md",                "displayName": "Vanta.js" },
+    { "id": "playcanvas",           "path": "skills/playcanvas.md",           "displayName": "PlayCanvas" },
+    { "id": "pixijs",               "path": "skills/pixijs.md",               "displayName": "PixiJS" },
+    { "id": "locomotive-scroll",    "path": "skills/locomotive-scroll.md",    "displayName": "Locomotive Scroll" },
+    { "id": "barba",                "path": "skills/barba.md",                "displayName": "Barba.js" },
+    { "id": "react-spring",         "path": "skills/react-spring.md",         "displayName": "React Spring" },
+    { "id": "magic-ui",             "path": "skills/magic-ui.md",             "displayName": "Magic UI" },
+    { "id": "aos",                  "path": "skills/aos.md",                  "displayName": "AOS" },
+    { "id": "animejs",              "path": "skills/animejs.md",              "displayName": "Anime.js" },
+    { "id": "lottie",               "path": "skills/lottie.md",               "displayName": "Lottie" },
+    { "id": "blender",              "path": "skills/blender.md",              "displayName": "Blender" },
+    { "id": "spline",               "path": "skills/spline.md",               "displayName": "Spline" },
+    { "id": "rive",                 "path": "skills/rive.md",                 "displayName": "Rive" },
+    { "id": "substance-3d",         "path": "skills/substance-3d.md",         "displayName": "Substance 3D" },
+    { "id": "integration-patterns", "path": "skills/integration-patterns.md", "displayName": "Integration Patterns" },
+    { "id": "modern-design",        "path": "skills/modern-design.md",        "displayName": "Modern Design" }
+  ],
+  "bundles": [
+    { "id": "core-3d-animation",    "path": "bundles/core-3d-animation.json" },
+    { "id": "extended-3d-scroll",   "path": "bundles/extended-3d-scroll.json" },
+    { "id": "animation-components", "path": "bundles/animation-components.json" },
+    { "id": "authoring-motion",     "path": "bundles/authoring-motion.json" },
+    { "id": "meta-skills",          "path": "bundles/meta-skills.json" }
+  ]
+}
