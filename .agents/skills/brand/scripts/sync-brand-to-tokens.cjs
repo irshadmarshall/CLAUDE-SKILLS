@@ -96,15 +96,24 @@ function generateColorScale(baseHex, darkHex, lightHex) {
 }
 
 /**
- * Adjust hex color brightness
+ * Adjust hex color brightness by mixing proportionally toward white
+ * (positive percent) or black (negative percent). A flat per-channel
+ * add/subtract — the previous approach — erases the ratio between
+ * channels that encodes hue, so pale tints of saturated colors drifted
+ * toward grey/cyan and dark shades clipped to pure black well before
+ * reaching the scale's darkest steps. Mixing preserves hue across the
+ * whole ramp instead.
  */
 function adjustBrightness(hex, percent) {
   if (typeof hex !== 'string') return '#000000';
   const num = parseInt(hex.replace('#', ''), 16);
-  const r = Math.min(255, Math.max(0, (num >> 16) + Math.round(255 * percent)));
-  const g = Math.min(255, Math.max(0, ((num >> 8) & 0x00FF) + Math.round(255 * percent)));
-  const b = Math.min(255, Math.max(0, (num & 0x0000FF) + Math.round(255 * percent)));
-  return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0').toUpperCase()}`;
+  const r = (num >> 16) & 0xFF;
+  const g = (num >> 8) & 0xFF;
+  const b = num & 0xFF;
+  const target = percent >= 0 ? 255 : 0;
+  const t = Math.min(1, Math.abs(percent));
+  const mix = (channel) => Math.round(channel + (target - channel) * t);
+  return `#${((mix(r) << 16) | (mix(g) << 8) | mix(b)).toString(16).padStart(6, '0').toUpperCase()}`;
 }
 
 /**
