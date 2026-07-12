@@ -123,12 +123,11 @@ function extractVoice(content) {
     /### Prohibited[\s\S]*?(?=###|##|$)/i
   );
   if (prohibitedMatch) {
-    const terms = prohibitedMatch[0].match(/\|\s*([^|]+)\s*\|/g);
-    if (terms) {
-      voice.prohibited = terms
-        .map((t) => t.replace(/\|/g, "").trim())
-        .filter((t) => t && !t.includes("Avoid") && !t.includes("---"));
-    }
+    // Take only the first cell of each table row (the term), not the reason column.
+    const rows = prohibitedMatch[0].split("\n").filter((l) => l.trim().startsWith("|"));
+    voice.prohibited = rows
+      .map((row) => row.split("|")[1]?.trim())
+      .filter((t) => t && !/^-+$/.test(t) && !/^avoid$/i.test(t));
   }
 
   // Fallback: look for Forbidden Phrases
