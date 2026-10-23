@@ -1,0 +1,13 @@
+{
+  "id": "core-3d-animation",
+  "displayName": "Core 3D Animation",
+  "description": "The essential 3D and animation toolkit: Three.js, GSAP, React Three Fiber, Framer Motion, and Babylon.js",
+  "version": "1.0.0",
+  "skills": [
+    "threejs-webgl",
+    "gsap-scrolltrigger",
+    "react-three-fiber",
+    "motion",
+    "babylonjs"
+  ]
+}

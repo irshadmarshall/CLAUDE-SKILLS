@@ -1,0 +1,12 @@
+{
+  "id": "authoring-motion",
+  "displayName": "Authoring & Motion",
+  "description": "3D authoring and interactive animation tools: Blender, Spline, Rive, and Substance 3D",
+  "version": "1.0.0",
+  "skills": [
+    "blender",
+    "spline",
+    "rive",
+    "substance-3d"
+  ]
+}

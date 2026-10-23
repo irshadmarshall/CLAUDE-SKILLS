@@ -1,0 +1,10 @@
+{
+  "id": "meta-skills",
+  "displayName": "Meta Skills",
+  "description": "Cross-cutting principles: multi-library integration patterns and modern web design",
+  "version": "1.0.0",
+  "skills": [
+    "integration-patterns",
+    "modern-design"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "animation-components",
+  "displayName": "Animation Components",
+  "description": "React and DOM animation components: React Spring, Magic UI, AOS, Anime.js, and Lottie",
+  "version": "1.0.0",
+  "skills": [
+    "react-spring",
+    "magic-ui",
+    "aos",
+    "animejs",
+    "lottie"
+  ]
+}
